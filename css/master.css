@@ -65,7 +65,12 @@ aside {
     text-align: center;
 }
 
-
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 
 /*
@@ -171,7 +176,10 @@ nav ul li a:hover {
 }
 .resume-div {
     padding: 5px;
+    margin: 10px 10px;
 }
+
+
 
 
 
@@ -192,6 +200,7 @@ nav ul li a:hover {
     width: 80%;
     height: 80%;
     border-radius: 30px;
+    padding-bottom: 8px;
 }
 
 nav .contact-me {
@@ -271,6 +280,7 @@ form input {
     padding: 5px 10px;
     width: 200px;
     height: 30px;
+    flex-grow: 1;
 }
 
 form button {
@@ -322,3 +332,19 @@ form button:hover {
     font-size: 14px;
     color: #333;
   }
+@media screen and (max-width: 600px) {
+     .photos-section {
+        flex-direction: column;
+     }
+     .image-item {
+        width: 100%;
+     }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .photos-section {
+        display: flex;
+    }
+    .image-item {
+        flex: 50%;
+    }
+}
